@@ -2,7 +2,6 @@ module TestRDA
     using Base.Test
     using DataFrames
     using RData
-    using Compat
 
     # check for Float64 NA
     @test !RData.isna_float64(reinterpret(UInt64, 1.0))
@@ -31,7 +30,7 @@ module TestRDA
     df[2, :] = NA
     append!(df, df[2, :])
     df[3, :num] = NaN
-    df[:, :cplx] = @data [NA, @compat(Complex128(1,NaN)), NaN]
+    df[:, :cplx] = @data [NA, Complex128(1,NaN), NaN]
     @test isequal(sexp2julia(load("$testdir/data/NAs.rda",convert=false)["df"]), df)
     # ASCII format saves NaN as NA
     df[3, :num] = NA

@@ -20,7 +20,7 @@ immutable DictoVec{T}
     name2index::Dict{RString, Int}
     index2name::Dict{Int, RString}
 
-    @compat function (::Type{DictoVec}){T}(data::T, names::Vector{RString} = Vector{RString}())
+    function (::Type{DictoVec}){T}(data::T, names::Vector{RString} = Vector{RString}())
         n2i, i2n = name2index(names)
         new{T}(data, n2i, i2n)
     end

@@ -1,6 +1,5 @@
 # RData
 
-[![Julia 0.5 Status](http://pkg.julialang.org/badges/RData_0.5.svg)](http://pkg.julialang.org/?pkg=RData&ver=0.5)
 [![Julia 0.6 Status](http://pkg.julialang.org/badges/RData_0.6.svg)](http://pkg.julialang.org/?pkg=RData&ver=0.6)
 
 [![Coverage Status](https://coveralls.io/repos/github/JuliaStats/RData.jl/badge.svg)](https://coveralls.io/github/JuliaStats/RData.jl)

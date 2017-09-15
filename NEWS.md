@@ -1,3 +1,10 @@
+## RData v0.1.0 Release Notes
+
+##### Changes
+* R logical vectors converted to `Vector{Bool}` (instead of `Vector{Int32}`)
+* R factors converted into `CategoricalVector` (instead of `PooledDataArray`)
+* switched from `DataVector` to `Vector{Union{T,Null}}` for NAs
+
 ## RData v0.0.4 Release Notes
 
 Now the recommended way to load `.RData`/`.rda` files is by `FileIO.load()`.

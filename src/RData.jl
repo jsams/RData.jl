@@ -2,8 +2,7 @@ __precompile__()
 
 module RData
 
-using Compat, DataFrames, GZip, FileIO
-import DataArrays: data
+using Compat, DataFrames, GZip, FileIO, CategoricalArrays, Nulls
 import DataFrames: identifier
 import Compat: unsafe_string
 import FileIO: load

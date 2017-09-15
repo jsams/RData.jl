@@ -1,7 +1,7 @@
 """
 ASCII RData format IO stream wrapper.
 """
-type ASCIIIO{T<:IO} <: RDAIO
+@compat struct ASCIIIO{T<:IO} <: RDAIO
     sub::T              # underlying IO stream
 
     (::Type{ASCIIIO}){T<:IO}(io::T) = new{T}(io)

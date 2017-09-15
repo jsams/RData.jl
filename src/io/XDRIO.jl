@@ -1,7 +1,7 @@
 """
 XDR (machine-independent binary) RData format IO stream wrapper.
 """
-type XDRIO{T<:IO} <: RDAIO
+@compat struct XDRIO{T<:IO} <: RDAIO
     sub::T             # underlying IO stream
     buf::Vector{UInt8} # buffer for strings
     (::Type{XDRIO}){T <: IO}(io::T) = new{T}(io, Vector{UInt8}(1024))

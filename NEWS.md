@@ -4,6 +4,7 @@
 * R logical vectors converted to `Vector{Bool}` (instead of `Vector{Int32}`)
 * R factors converted into `CategoricalVector` (instead of `PooledDataArray`)
 * switched from `DataVector` to `Vector{Union{T,Null}}` for NAs
+* dropped compatibility with Julia versions prior v0.6
 
 ## RData v0.0.4 Release Notes
 

@@ -41,7 +41,7 @@ else
     end
 end
 
-@compat struct CHARSXProps # RDA CHARSXP properties
+struct CHARSXProps # RDA CHARSXP properties
     levs::UInt32       # level flags (encoding etc) TODO process
     nchar::Int32       # string length, -1 for NA strings
 end

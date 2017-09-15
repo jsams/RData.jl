@@ -2,9 +2,8 @@ __precompile__()
 
 module RData
 
-using Compat, DataFrames, GZip, FileIO, CategoricalArrays, Nulls
+using DataFrames, GZip, FileIO, CategoricalArrays, Nulls
 import DataFrames: identifier
-import Compat: unsafe_string
 import FileIO: load
 
 export
@@ -18,7 +17,7 @@ include("sxtypes.jl")
 """
 Abstract RDA format IO stream wrapper.
 """
-@compat abstract type RDAIO end
+abstract type RDAIO end
 
 include("io/XDRIO.jl")
 include("io/ASCIIIO.jl")

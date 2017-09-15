@@ -1,5 +1,7 @@
 ## RData v0.1.0 Release Notes
 
+Updated to Julia v0.6 (older versions not supported), DataFrames.jl v0.10, Nulls.jl and CategoricalArrays.jl v0.2.
+
 ##### Changes
 * R logical vectors converted to `Vector{Bool}` (instead of `Vector{Int32}`)
 * R factors converted into `CategoricalVector` (instead of `PooledDataArray`)
